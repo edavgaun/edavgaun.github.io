@@ -1,2 +1,2 @@
-# edgar_avalos.github.io
+# Edgar_Avalos.github.io
 DS-Portfolio
