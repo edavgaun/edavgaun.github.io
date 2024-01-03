@@ -6,9 +6,88 @@
     <title>Edgar Avalos - Portfolio</title>
 </head>
 <body>
+<head>
     <h1>Edgar Avalos-Gauna</h1>
     <p>Welcome to my GitHub portfolio!</p>
     <h2>Projects</h2>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web con Menú</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #menu {
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#" onclick="showContent('accion1')">Acción 1</a></li>
+            <li><a href="#" onclick="showContent('accion2')">Acción 2</a></li>
+            <li><a href="#" onclick="showContent('accion3')">Acción 3</a></li>
+            <!-- Agrega más acciones según sea necesario -->
+        </ul>
+    </div>
+
+    <div id="content">
+        <h1>Contenido de Acción</h1>
+        <p>Selecciona una acción del menú para ver el contenido correspondiente.</p>
+    </div>
+
+    <script>
+        function showContent(action) {
+            var contentElement = document.getElementById('content');
+            switch (action) {
+                case 'accion1':
+                    contentElement.innerHTML = '<h1>Contenido de Acción 1</h1><p>Descripción de la acción 1.</p>';
+                    break;
+                case 'accion2':
+                    contentElement.innerHTML = '<h1>Contenido de Acción 2</h1><p>Descripción de la acción 2.</p>';
+                    break;
+                case 'accion3':
+                    contentElement.innerHTML = '<h1>Contenido de Acción 3</h1><p>Descripción de la acción 3.</p>';
+                    break;
+                // Agrega más casos según sea necesario
+                default:
+                    contentElement.innerHTML = '<h1>Contenido no especificado</h1><p>Selecciona una acción del menú.</p>';
+            }
+        }
+    </script>
+</html>
     <ul>
         <li><a href="https://github.com/<your-username>/project1">Project 1</a></li>
         <li><a href="https://github.com/<your-username>/project2">Project 2</a></li>
