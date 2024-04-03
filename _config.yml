@@ -1,3 +1,17 @@
-title: Edgar Avalos-Gauna
-description: RCEL 506 data science showcase
-theme: Time machine
+theme: jekyll-theme-time-machine
+
+# Site settings
+title: RCEL 506 Top Data Science Projects
+description: This DS portfolio will showcase some of the best projects that have been presented over the years
+
+# Social media links (optional)
+# Replace 'your_username' and 'your_link' with your actual username and links
+social:
+  - title: GitHub
+    url: https://github.com/edavgaun
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/e-avalos-gauna/
+
+# Include your profile picture (replace 'profile.jpg' with the actual file name)
+# Place your profile picture in the root directory of your GitHub Pages repository
+profile_picture: /images/EAG.jpg
