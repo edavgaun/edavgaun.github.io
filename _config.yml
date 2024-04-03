@@ -3,6 +3,7 @@ theme: jekyll-theme-minimal
 # Site settings
 title: RCEL 506 Top Data Science Projects
 description: This DS portfolio will showcase some of the best projects that have been presented over the years
+logo: /images/EAG.jpg
 
 # Social media links (optional)
 # Replace 'your_username' and 'your_link' with your actual username and links
@@ -12,7 +13,3 @@ social:
     logo: https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png
   - title: LinkedIn
     url: https://www.linkedin.com/in/e-avalos-gauna/
-
-# Include your profile picture (replace 'profile.jpg' with the actual file name)
-# Place your profile picture in the root directory of your GitHub Pages repository
-logo: /images/EAG.jpg
