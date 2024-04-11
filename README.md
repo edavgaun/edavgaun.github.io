@@ -1,3 +1,3 @@
 # Welcome
 
-<img src="https://github.com/edavgaun/Inteligencia-de-negocios/blob/master/img/datascience.png">
+<img src="https://raw.githubusercontent.com/edavgaun/Inteligencia-de-negocios/master/img/datascience.png">
