@@ -3,7 +3,7 @@ theme: jekyll-theme-minimal
 # Site settings
 title: RCEL 506 Top Data Science Projects
 description: This DS portfolio will showcase some of the best projects that have been presented over the years
-logo: images/EAG.jpg
+logo: https://github.com/edavgaun/images/blob/main/EAG.jpeg
 
 # Social media links (optional)
 # Replace 'your_username' and 'your_link' with your actual username and links
