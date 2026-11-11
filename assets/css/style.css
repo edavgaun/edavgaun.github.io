@@ -150,3 +150,11 @@ h4 { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: 
   .sb-links { margin-top: 0; }
   .content { padding: 32px 24px; }
 }
+
+
+/* ===== Research tabs ===== */
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
+.tab { font: 600 .9rem var(--sans); padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--body); cursor: pointer; }
+.tab:hover { border-color: var(--accent); color: var(--accent); }
+.tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.card[hidden] { display: none; }
