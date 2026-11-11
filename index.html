@@ -37,10 +37,29 @@ layout: default
 
 <section class="panel" id="teaching" hidden>
   <h2>Teaching</h2>
-  <p class="section-intro">Courses and open, notebook-based materials on GitHub, in English and Spanish.</p>
-  <div class="grid grid-2">
-    {% for p in site.data.projects %}{% unless p.featured %}{% include project-card.html project=p %}{% endunless %}{% endfor %}
+  <p class="section-intro">Statistics, machine learning and data science for engineers, from undergraduate courses to graduate programs in the US and Mexico.</p>
+  <div class="schools">
+    {% for s in site.data.teaching %}
+    <div class="school">
+      <div class="school-logo">
+        <img src="{{ s.logo | relative_url }}" alt="{{ s.name }} logo" onerror="this.remove()">
+      </div>
+      <div class="school-info">
+        <h3>{{ s.name }}</h3>
+        <p class="school-role">{{ s.role }} · <span class="muted">{{ s.years }}</span></p>
+        <ul class="courses">
+          {% for c in s.courses %}<li>{% if c.url %}<a href="{{ c.url }}">{{ c.name }} ↗</a>{% else %}{{ c.name }}{% endif %}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
   </div>
+  <p class="muted small open-materials">Open course materials on GitHub:
+    <a href="https://github.com/edavgaun/Inteligencia-de-negocios">Inteligencia de Negocios</a> ·
+    <a href="https://github.com/edavgaun/Programaci-n-Orientada-a-Objetos-en-Python">POO en Python</a> ·
+    <a href="https://github.com/edavgaun/Python_curso">Python (beginner)</a> ·
+    <a href="https://github.com/edavgaun/Python_Intermedio">Python (intermediate)</a>
+  </p>
 </section>
 
 <section class="panel" id="showcase" hidden>
