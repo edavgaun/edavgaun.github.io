@@ -33,6 +33,7 @@
     - label: Dashboard
       url: https://micai2026-mex-ia-evloution.streamlit.app/
   featured: true
+  group: mexico
 
 - title: MICAI and the Making of AI in Mexico
   summary: >-
@@ -48,6 +49,34 @@
     - label: Paper
       url: https://doi.org/10.1007/978-3-032-09044-7_5
   featured: true
+  group: mexico
+
+- title: AI and Supply Chains Across the Global IEOM Landscape
+  summary: >-
+    NLP meta-analysis of 11,000+ IEOM papers from eight regions (2017–2024):
+    BERTopic and TF-IDF signatures show that AI and supply chain research is
+    framed differently by each region.
+  tags: [NLP, BERTopic, UMAP, TF-IDF]
+  award: "Best Track Paper · IEOM World Congress 2025"
+  metric: "AI & Data Science track · Windsor, Canada"
+  page: /projects/ieom-ai-supply-chain/
+  image: /assets/img/ieom2025/semantic-landscape.jpg
+  image_fit: cover
+  featured: true
+  group: ieom
+
+- title: A Feasibility Study of Carbon Capture and Storage in the United States
+  summary: >-
+    Graduate student paper by Rice master's students Louis Noel and Erick Danyi,
+    co-authored with Edgar Avalos-Gauna.
+  tags: [Student research, Carbon capture]
+  award: "2nd place · Graduate Student Paper Competition · IEOM Houston 2023"
+  metric: "8th North American IEOM Conference · Paper ID 84"
+  links:
+    - label: Award list (IEOM)
+      url: https://www.ieomsociety.org/documents/awards-2023houston.pdf
+  featured: true
+  group: students
 
 - title: "RCEL 506 — Applied Statistics & Data Science for Engineering Leaders"
   summary: >-
