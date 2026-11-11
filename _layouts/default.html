@@ -10,34 +10,48 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      <nav>
-        <a href="{{ '/#work' | relative_url }}">Work</a>
-        <a href="{{ '/#teaching' | relative_url }}">Teaching</a>
-        <a href="{{ '/#showcase' | relative_url }}">Showcase</a>
-        <a href="{{ '/#contact' | relative_url }}">Contact</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <img class="sb-photo" src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}">
+      <h1 class="sb-name"><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
+      <p class="sb-role">{{ site.author.role }}</p>
+      <p class="sb-bio">{{ site.author.bio }}</p>
+      <nav class="sb-nav">
+        <a href="{{ '/#research' | relative_url }}" data-tab="research">Research</a>
+        <a href="{{ '/#teaching' | relative_url }}" data-tab="teaching">Teaching</a>
+        <a href="{{ '/#showcase' | relative_url }}" data-tab="showcase">Student showcase</a>
       </nav>
-    </div>
-  </header>
-
-  <main>
-    {{ content }}
-  </main>
-
-  <footer class="footer" id="contact">
-    <div class="wrap footer-inner">
-      <div>
-        <strong>{{ site.author.name }}</strong><br>
-        <span class="muted">{{ site.author.role }}</span>
-      </div>
-      <div class="footer-links">
+      <p class="sb-links">
         <a href="https://github.com/{{ site.author.github }}">GitHub</a>
         <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn</a>
-      </div>
-    </div>
-    <div class="wrap muted small">Built with Jekyll on GitHub Pages · <a href="https://github.com/{{ site.author.github }}/{{ site.author.github }}.github.io">View source</a></div>
-  </footer>
+      </p>
+    </aside>
+
+    <main class="content">
+      {{ content }}
+      <footer class="footer-min muted small">
+        © {{ site.time | date: '%Y' }} {{ site.author.name }} · Built with Jekyll on GitHub Pages ·
+        <a href="https://github.com/{{ site.author.github }}/{{ site.author.github }}.github.io">View source</a>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var panels = document.querySelectorAll('.panel');
+      var links = document.querySelectorAll('.sb-nav a');
+      function show() {
+        var id = (location.hash || '#research').slice(1);
+        if (panels.length && !document.getElementById(id)) id = 'research';
+        panels.forEach(function (p) { p.hidden = p.id !== id; });
+        links.forEach(function (a) {
+          a.classList.toggle('active', a.dataset.tab === id && (panels.length > 0 || a.dataset.tab === 'research'));
+        });
+        if (panels.length) window.scrollTo(0, 0);
+      }
+      window.addEventListener('hashchange', show);
+      show();
+    })();
+  </script>
 </body>
 </html>
