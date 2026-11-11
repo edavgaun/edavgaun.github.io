@@ -1,15 +1,31 @@
-theme: jekyll-theme-minimal
+# ------------------------------------------------------------
+# Site settings — this is the ONLY file most people need to edit
+# besides _data/projects.yml
+# ------------------------------------------------------------
+title: Edgar Avalos-Gauna
+tagline: Data Science · Applied Statistics · Engineering Leadership
+description: >-
+  Portfolio of Dr. Edgar Avalos-Gauna — data science projects, teaching
+  materials, and a showcase of the best RCEL 506 student work at Rice University.
+url: "https://edavgaun.github.io"
+baseurl: ""
+lang: en
 
-# Site settings
-title: RCEL 506 Top Data Science Projects
-description: This DS portfolio will showcase some of the best projects that have been presented over the years
-logo: https://raw.githubusercontent.com/edavgaun/images/main/EAG.jpeg
+author:
+  name: Dr. Edgar Avalos-Gauna
+  role: Lecturer, Rice University
+  photo: https://raw.githubusercontent.com/edavgaun/images/main/EAG.jpeg
+  github: edavgaun
+  linkedin: e-avalos-gauna
 
-# Social media links (optional)
-# Replace 'your_username' and 'your_link' with your actual username and links
-social:
-  - title: GitHub
-    url: https://github.com/edavgaun
-    logo: https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png
-  - title: LinkedIn
-    url: https://www.linkedin.com/in/e-avalos-gauna/
+# No remote theme: the look lives in _layouts/ and assets/css/
+# so students can see (and copy) exactly how it is built.
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - "*.py"

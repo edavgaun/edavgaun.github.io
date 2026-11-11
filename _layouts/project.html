@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="case wrap">
+  <a class="back" href="{{ '/#work' | relative_url }}">← All projects</a>
+  <header class="case-head">
+    <p class="eyebrow">Case study</p>
+    {% if page.award %}<p class="award">🏆 {{ page.award }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.description }}</p>
+    {% if page.authors %}<p class="byline">{{ page.authors }}{% if page.venue %} · <span class="muted">{{ page.venue }}</span>{% endif %}</p>{% endif %}
+    {% if page.tags %}<ul class="tags">{% for t in page.tags %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+    {% if page.kpis %}
+    <div class="kpis">
+      {% for k in page.kpis %}<div class="kpi"><span class="kpi-value">{{ k.value }}</span><span class="kpi-label">{{ k.label }}</span></div>{% endfor %}
+    </div>
+    {% endif %}
+    {% if page.links %}<p>{% for l in page.links %}<a class="btn{% unless forloop.first %} btn-ghost{% endunless %}" href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}</p>{% endif %}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

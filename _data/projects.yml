@@ -1,0 +1,87 @@
+# ------------------------------------------------------------
+# Every card on the home page comes from this file.
+# To add a project: copy one block, edit it, commit. That's it.
+#
+#   title     – short, specific name (not "Project 1")
+#   summary   – ONE sentence: problem → what you did → result
+#   tags      – methods / tools, 2-4 items
+#   metric    – the headline number, with context
+#   page      – link to an in-site case study (optional)
+#   repo      – link to the code
+#   links     – extra links (story, dashboard, paper), list of label/url
+#   image     – card image; add image_fit: cover for photos/networks
+#   award     – optional badge, e.g. "2nd place · MICAI 2025"
+#   featured  – true = shown in "Featured work"
+# ------------------------------------------------------------
+
+- title: The Core-Periphery Structure of Mexican AI
+  summary: >-
+    25 years of MICAI proceedings turned into an institutional collaboration
+    network: it grew from 53 to 852 institutions, yet stayed less integrated
+    than chance, with connectivity routed through a 6-institution core.
+  tags: [Network science, Null models, Scientometrics, LLM extraction]
+  award: "3rd place · MICAI 2026"
+  metric: "Springer LNAI 17150"
+  page: /projects/micai-core-periphery/
+  image: /assets/img/micai/network-2025.jpg
+  image_fit: cover
+  links:
+    - label: Paper
+      url: https://doi.org/10.1007/978-3-032-44179-9_39
+    - label: Interactive story
+      url: /projects/micai-story.html
+    - label: Dashboard
+      url: https://micai2026-mex-ia-evloution.streamlit.app/
+  featured: true
+
+- title: MICAI and the Making of AI in Mexico
+  summary: >-
+    25 years of MICAI proceedings analyzed with bibliometrics and LDA topic
+    modeling, tracing Mexican AI research from symbolic reasoning to
+    data-centric machine learning and LLMs.
+  tags: [NLP, Topic modeling, Bibliometrics]
+  award: "2nd place · MICAI 2025"
+  metric: "Springer LNAI 16222"
+  page: /projects/micai-25-years/
+  image: /assets/img/micai2025/reach.png
+  links:
+    - label: Paper
+      url: https://doi.org/10.1007/978-3-032-09044-7_5
+  featured: true
+
+- title: "RCEL 506 — Applied Statistics & Data Science for Engineering Leaders"
+  summary: >-
+    Graduate course where students act as engineering managers supervising an
+    AI assistant (O.W.L.E.T.) through CRISP-DM, with curated real-world datasets
+    for regression, classification and inference.
+  tags: [Course design, CRISP-DM, AI-assisted analytics]
+  metric: "Rice MEML"
+  repo: https://github.com/edavgaun/RCEL_506
+  featured: false
+
+- title: Inteligencia de Negocios (Business Intelligence)
+  summary: >-
+    Open Spanish-language course on business intelligence and analytics in
+    Python, taught entirely through Jupyter notebooks.
+  tags: [Jupyter, pandas, Data visualization]
+  metric: "56 forks"
+  repo: https://github.com/edavgaun/Inteligencia-de-negocios
+  featured: false
+
+- title: Programación Orientada a Objetos en Python
+  summary: >-
+    Hands-on course on object-oriented programming in Python, from classes
+    to inheritance and design, entirely in notebooks.
+  tags: [Python, OOP, Teaching]
+  metric: "32 forks"
+  repo: https://github.com/edavgaun/Programaci-n-Orientada-a-Objetos-en-Python
+  featured: false
+
+- title: Python, from zero to pandas
+  summary: >-
+    Two-part Python curriculum (beginner and intermediate) that takes students
+    from their first variable to real data wrangling with pandas.
+  tags: [Python, pandas, Teaching]
+  metric: "2 courses"
+  repo: https://github.com/edavgaun/Python_curso
+  featured: false
