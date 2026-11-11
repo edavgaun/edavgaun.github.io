@@ -1,59 +1,28 @@
 ---
 layout: default
 ---
-<section class="hero">
-  <div class="wrap hero-inner">
-    <img class="avatar" src="{{ site.author.photo }}" alt="Portrait of {{ site.author.name }}">
-    <div>
-      <p class="eyebrow">{{ site.tagline }}</p>
-      <h1>I help engineers turn data into decisions.</h1>
-      <p class="lede">
-        I teach applied statistics and data science to future engineering leaders at Rice University.
-        My focus is less on algorithms for their own sake and more on the judgment around them:
-        framing the business question, auditing AI-generated analysis, and communicating results
-        that a manager can act on.
-      </p>
-      <p>
-        <a class="btn" href="#work">See my work</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn</a>
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="wrap section" id="work">
-  <h2>Featured work</h2>
-  <p class="section-intro">Research and teaching projects, each with its question, data, methods and results.</p>
+<section class="panel" id="research">
+  <h2>Research</h2>
+  <p class="section-intro">Award-winning studies on how Mexico's AI research community has evolved, built from 25 years of MICAI proceedings.</p>
   <div class="grid grid-2">
     {% for p in site.data.projects %}{% if p.featured %}{% include project-card.html project=p %}{% endif %}{% endfor %}
   </div>
 </section>
 
-<section class="wrap section" id="teaching">
-  <h2>Open teaching materials</h2>
-  <p class="section-intro">Free, notebook-based courses on GitHub, in English and Spanish.</p>
+<section class="panel" id="teaching" hidden>
+  <h2>Teaching</h2>
+  <p class="section-intro">Courses and open, notebook-based materials on GitHub, in English and Spanish.</p>
   <div class="grid grid-2">
     {% for p in site.data.projects %}{% unless p.featured %}{% include project-card.html project=p %}{% endunless %}{% endfor %}
   </div>
 </section>
 
-<section class="band">
-  <div class="wrap section">
-    <h2>Toolkit</h2>
-    <div class="toolkit">
-      <div><h4>Methods</h4><p>Regression · Classification · Hypothesis testing · Experimental design · CRISP-DM</p></div>
-      <div><h4>Tools</h4><p>Python · pandas · scikit-learn · statsmodels · matplotlib · Jupyter · Git</p></div>
-      <div><h4>Leadership</h4><p>Problem framing · Auditing AI-assisted analysis · Executive communication</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="wrap section" id="showcase">
+<section class="panel" id="showcase" hidden>
   <h2>RCEL 506 student showcase</h2>
   {% assign sc = site.data.showcase %}
   {% if sc.size > 0 %}
     <p class="section-intro">Selected team projects from RCEL 506, featured with the authors' permission.</p>
-    <div class="grid grid-3">
+    <div class="grid grid-2">
       {% for p in sc %}
       <article class="card">
         <div class="card-body">
@@ -74,7 +43,7 @@ layout: default
     <li><strong>A real question.</strong> One sentence a manager would ask, not "I applied random forest to a dataset".</li>
     <li><strong>The headline result first.</strong> A number with context, stated before the method.</li>
     <li><strong>One chart that makes the point.</strong> Titled with the finding, not the variable names.</li>
-    <li><strong>An honest limitations section.</strong> What the model can't tell you and what you'd do next.</li>
+    <li><strong>An honest limitations section.</strong> What the analysis can't tell you and what you'd do next.</li>
     <li><strong>Reproducible code.</strong> A linked script or notebook that regenerates every number on the page.</li>
   </ol>
 </section>
