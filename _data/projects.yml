@@ -165,9 +165,11 @@
 
 - title: "Leadership in Engineering and Business Decision-Making Through Data Science and Data Storytelling"
   summary: >-
-    How data science and data storytelling support engineering leaders in
-    turning analysis into business decisions.
-  tags: [Data storytelling, Decision-making, Engineering leadership]
+    Proposes the Adaptive Data Storytelling Cycle: a framework that combines
+    data science literacy with six rhetorical appeals (ethos, logos, pathos,
+    application, wonder, kairos) to help engineering leaders make decisions at
+    each gate of the product development funnel.
+  tags: [Data storytelling, Decision-making, Product development, Engineering leadership]
   metric: "ASEM 2024 · with S. Gomez & M. Glavan"
   image: /assets/img/asem2024/adaptive-data-storytelling-cycle.png
   featured: true
