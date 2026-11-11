@@ -9,7 +9,7 @@ layout: default
     <button class="tab" data-filter="ieom">IEOM</button>
     <button class="tab" data-filter="asem">ASEM</button>
     <button class="tab" data-filter="icmla">ICMLA</button>
-    <button class="tab" data-filter="phd">PhD related</button>
+    <button class="tab" data-filter="others">Others</button>
   </div>
   <div class="grid grid-2" id="research-grid">
     {% for p in site.data.projects %}{% if p.featured %}{% include project-card.html project=p %}{% endif %}{% endfor %}
