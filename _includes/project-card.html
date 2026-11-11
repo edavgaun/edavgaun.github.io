@@ -1,5 +1,5 @@
 {% assign p = include.project %}
-<article class="card{% if p.image %} card-img{% endif %}">
+<article class="card{% if p.image %} card-img{% endif %}" data-group="{{ p.group }}">
   {% if p.image %}<img class="{{ p.image_fit }}" src="{{ p.image | relative_url }}" alt="Chart from {{ p.title }}" loading="lazy">{% endif %}
   <div class="card-body">
     {% if p.award %}<p class="award">🏆 {{ p.award }}</p>{% endif %}
