@@ -78,6 +78,91 @@
   featured: true
   group: ieom
 
+- title: Sentiment Analysis on Twitter About COVID-19 Vaccination in Mexico
+  summary: >-
+    Tweets from late October 2020 to late April 2021 on Mexico's vaccination
+    campaign, classified with logistic regression, neural networks, naive Bayes
+    and SVM to follow public opinion.
+  tags: [NLP, Sentiment analysis, Classification]
+  metric: "MICAI 2021 · Springer LNAI"
+  links:
+    - label: Paper
+      url: https://doi.org/10.1007/978-3-030-89820-5_8
+  featured: true
+  group: micai
+
+- title: "OWLET: Human-in-the-Loop Simulation for Engineering Management"
+  summary: >-
+    A simulation in which engineering managers supervise an overconfident AI
+    assistant in AI-augmented workflows; the framework behind RCEL 506 at Rice.
+  tags: [Human-in-the-loop, AI in education, Engineering management]
+  metric: "ASEM 2026 · Madison, Wisconsin"
+  links:
+    - label: RCEL 506 repo
+      url: https://github.com/edavgaun/RCEL_506
+  featured: true
+  group: asem
+
+- title: "Engineering Leadership in Transition: Topic Modeling of ASEM Proceedings"
+  summary: >-
+    Topic modeling of ASEM conference proceedings, tracing a growing focus on
+    workforce leadership, talent transformation and organizational change
+    under AI disruption.
+  tags: [NLP, Topic modeling, Engineering management]
+  metric: "ASEM 2025 · Boise, Idaho"
+  featured: true
+  group: asem
+
+- title: Machine Learning vs. Numerical Solutions for Lubricant Film Thickness
+  summary: >-
+    Speed/accuracy comparison of a numerical solver, neural networks and other
+    ML models: non-ANN models were orders of magnitude faster while reaching
+    an R² of up to 0.997.
+  tags: [Regression, Surrogate models, Tribology]
+  metric: "IEEE ICMLA 2024 · with C. Combs & C. F. Higgs III"
+  featured: true
+  group: icmla
+
+- title: "Visitor Arrivals to Chichén Itzá: An Exploratory Data Analysis"
+  summary: >-
+    Two years of box-office data (Dec 2016–Dec 2018) from Mexico's most
+    visited archaeological site: 73% of visitors were non-Mexican, with
+    distinct arrival-time and seasonal patterns.
+  tags: [EDA, Tourism analytics, Data visualization]
+  metric: "IEEE ICMLA 2020"
+  links:
+    - label: Paper
+      url: https://doi.org/10.1109/ICMLA51294.2020.00189
+  featured: true
+  group: icmla
+
+- title: "Porous Metal Properties Analysis: A Machine Learning Approach"
+  summary: >-
+    Predicting permeability and Forchheimer coefficient of porous metals from
+    porosity, pore size and coordination number, comparing linear and
+    polynomial regression, random forest and neural networks.
+  tags: [Materials informatics, Random forest, Neural networks]
+  metric: "JOM 73(7), 2021"
+  links:
+    - label: Paper
+      url: https://doi.org/10.1007/s11837-021-04695-x
+  featured: true
+  group: phd
+
+- title: Numerical Simulation of Heat Transfer in Porous Metals for Cooling
+  summary: >-
+    CFD (ANSYS Fluent) model of fluid flow and heat transfer in open-cell
+    porous copper, the core of my PhD at the University of Liverpool.
+  tags: [CFD, Heat transfer, Simulation]
+  metric: "Metall. Mater. Trans. B 48, 2017 · open access"
+  links:
+    - label: Paper
+      url: https://doi.org/10.1007/s11663-017-0981-1
+    - label: PhD thesis
+      url: https://livrepository.liverpool.ac.uk/3018623/
+  featured: true
+  group: phd
+
 - title: "RCEL 506 — Applied Statistics & Data Science for Engineering Leaders"
   summary: >-
     Graduate course where students act as engineering managers supervising an
