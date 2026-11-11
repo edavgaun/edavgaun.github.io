@@ -1,0 +1,48 @@
+- name: Rice University
+  logo: /assets/img/logos/rice.png
+  role: Graduate Lecturer · Rice Center for Engineering Leadership & Dept. of Statistics
+  years: 2022 – present
+  courses:
+    - name: "RCEL 506 · Statistics & Data Science for Engineering Leadership"
+      url: https://github.com/edavgaun/RCEL_506
+    - name: "COMP 642 · Machine Learning"
+    - name: "STATS 413 · Machine Learning"
+
+- name: Universidad Panamericana
+  logo: /assets/img/logos/up.png
+  role: Lecturer · Former Head of the Data Science Center (2018 – 2022)
+  years: 2018 – present
+  courses:
+    - name: Business Intelligence
+      url: https://github.com/edavgaun/Inteligencia-de-negocios
+    - name: Object-Oriented Programming with Python
+      url: https://github.com/edavgaun/Programaci-n-Orientada-a-Objetos-en-Python
+    - name: Data Storytelling
+    - name: Algorithm Design with C#
+
+- name: Universidad de la Libertad
+  logo: /assets/img/logos/ulibertad.png
+  role: Lecturer · Data Science specialty program
+  years: 2025 – present
+  courses:
+    - name: Data Storytelling
+    - name: Data Science
+
+- name: Universidad Tecnológica de México (UNITEC)
+  logo: /assets/img/logos/unitec.png
+  role: Head of the Mathematics Department & Lecturer
+  years: 2012 – 2013
+  courses:
+    - name: Statistics
+    - name: Calculus
+    - name: Linear Algebra
+    - name: Differential Equations
+
+- name: University of Liverpool
+  logo: /assets/img/logos/liverpool.png
+  role: Teaching Assistant · School of Engineering
+  years: 2017
+  courses:
+    - name: Heat Pump & Refrigeration Lab
+    - name: Friction in a Pipe Line Lab
+    - name: Belt Friction Lab
