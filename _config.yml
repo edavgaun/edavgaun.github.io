@@ -13,9 +13,10 @@ lang: en
 
 author:
   name: Dr. Edgar Avalos-Gauna
-  role: Lecturer, Rice University
+  role: Lecturer, Dept. of Statistics & Rice Center for Engineering Leadership
   photo: /assets/img/profile.jpg
   bio: >-
+    PhD from the University of Liverpool in Mechanical Engineering. 
     I teach applied statistics and data science for engineering leaders
     (RCEL 506) and study how Mexico's AI research community has evolved,
     using network science and NLP on 25 years of MICAI proceedings.
