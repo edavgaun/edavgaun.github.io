@@ -3,10 +3,30 @@ layout: default
 ---
 <section class="panel" id="research">
   <h2>Research</h2>
-  <p class="section-intro">Award-winning studies on how Mexico's AI research community has evolved, built from 25 years of MICAI proceedings.</p>
-  <div class="grid grid-2">
+  <p class="section-intro">Award-winning meta-research that uses NLP and network science to map how research communities evolve.</p>
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-filter="all">All</button>
+    <button class="tab" data-filter="mexico">AI in Mexico</button>
+    <button class="tab" data-filter="ieom">Global IE/OM</button>
+    <button class="tab" data-filter="students">Student research</button>
+  </div>
+  <div class="grid grid-2" id="research-grid">
     {% for p in site.data.projects %}{% if p.featured %}{% include project-card.html project=p %}{% endif %}{% endfor %}
   </div>
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll('#research .tab');
+      var cards = document.querySelectorAll('#research-grid .card');
+      tabs.forEach(function (t) {
+        t.addEventListener('click', function () {
+          tabs.forEach(function (x) { x.classList.toggle('active', x === t); });
+          cards.forEach(function (c) {
+            c.hidden = t.dataset.filter !== 'all' && c.dataset.group !== t.dataset.filter;
+          });
+        });
+      });
+    })();
+  </script>
 </section>
 
 <section class="panel" id="teaching" hidden>
