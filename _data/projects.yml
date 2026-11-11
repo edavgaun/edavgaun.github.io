@@ -147,7 +147,7 @@
     - label: Paper
       url: https://doi.org/10.1007/s11837-021-04695-x
   featured: true
-  group: phd
+  group: others
 
 - title: Numerical Simulation of Heat Transfer in Porous Metals for Cooling
   summary: >-
@@ -161,4 +161,26 @@
     - label: PhD thesis
       url: https://livrepository.liverpool.ac.uk/3018623/
   featured: true
-  group: phd
+  group: others
+
+  - title: "Leadership in Engineering and Business Decision-Making Through Data Science and Data Storytelling"
+  summary: >-
+    How data science and data storytelling support engineering leaders in
+    turning analysis into business decisions.
+  tags: [Data storytelling, Decision-making, Engineering leadership]
+  metric: "ASEM 2024 · with S. Gomez & M. Glavan"
+  featured: true
+  group: asem
+
+- title: "Analyzing Decentralized Agent Strategies: KAN Interpretation of Multi-Agent Pursuit"
+  summary: >-
+    Deep reinforcement learning and Kolmogorov-Arnold Networks applied to
+    multi-agent vehicle pursuit in urban simulation, using KANs to interpret
+    the learned decentralized strategies.
+  tags: [Reinforcement learning, KAN, Multi-agent systems, Interpretability]
+  metric: "IEEE ISADS 2025 · with A. Noguera & F. Martínez-Ríos"
+  links:
+    - label: Project page
+      url: https://andnog.github.io/andrei.github.io/project/ieee-isads-research
+  featured: true
+  group: others
